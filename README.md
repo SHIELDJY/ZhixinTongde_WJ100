@@ -1,6 +1,6 @@
 ## ZhixinTongde_WJ100  
 # 同济大学 智信同德  
-![同济大学](http://photo.tongji.edu.cn/_mediafile/tjtk/photos/2010-8-27/b201082711479.jpg)  
+![同济大学](http://photo.tongji.edu.cn/_mediafile/tjtk/photos/2010-8-27/b2010827121548.gif)  
 ### GitHub repository for Tongji Uni. Team Zhixin Tongde based on WJ100 FPGA  
 ## GitHub 仓库 基于无剑100 FPGA平台的开发  
   
