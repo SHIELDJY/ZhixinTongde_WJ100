@@ -13,5 +13,5 @@
 [平头哥官网](https://www.t-head.cn/) | [平头哥芯片开放社区(OCC)](https://occ.t-head.cn/#/)  
 * 工具链接  
 [无剑100相关开发套件](https://occ.t-head.cn/community/download_detail?id=646798746268467200)  
-* 相关仓库(重要！！)
+* 相关仓库(重要！！)  
 [wujian100_open](https://github.com/T-head-Semi/wujian100_open)
