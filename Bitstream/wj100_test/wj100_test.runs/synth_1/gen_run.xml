@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-2L" LaunchTime="1584153952">
+  <File Type="PA-TCL" Name="wujian100_open_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="wujian100_open_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="wujian100_open_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="wujian100_open_top.vds"/>
+  <File Type="RDS-UTIL" Name="wujian100_open_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="wujian100_open_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="wujian100_open_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="wujian100_open_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="wujian100_open_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/fpga/wujian100_open_fpga_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/fpga/wujian100_open_fpga_top.v"/>
+        <Attr Name="ImportTime" Val="1584068141"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/E902_20191018.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/E902_20191018.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/sim_lib/PAD_DIG_IO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/sim_lib/PAD_DIG_IO.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/sim_lib/PAD_OSC_IO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/sim_lib/PAD_OSC_IO.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/ahb_matrix_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/ahb_matrix_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/aou_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/aou_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/apb0.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/apb0.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/apb0_sub_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/apb0_sub_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/apb1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/apb1.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/apb1_sub_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/apb1_sub_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/clkgen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/clkgen.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/common.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/common.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/core_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/core_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/dmac.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/dmac.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/dummy.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/dummy.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/sim_lib/fpga_byte_spram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/sim_lib/fpga_byte_spram.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/sim_lib/fpga_spram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/sim_lib/fpga_spram.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/gpio0.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/gpio0.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/ls_sub_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/ls_sub_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/matrix.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/matrix.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/pdu_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/pdu_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/pwm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/pwm.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/retu_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/retu_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/rtc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/rtc.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/sms.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/sms.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/smu_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/smu_top.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/tim.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/tim.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/tim1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/tim1.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/tim2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/tim2.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/tim3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/tim3.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/tim4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/tim4.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/tim5.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/tim5.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/tim6.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/tim6.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/tim7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/tim7.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/usi0.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/usi0.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/usi1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/usi1.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wujian100_open/soc/wdt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/wdt.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/params/apb1_params.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/params/apb1_params.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/params/wdt_params.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/params/wdt_params.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/params/apb0_params.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/params/apb0_params.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/params/timers_params.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/soc/params/timers_params.v"/>
+        <Attr Name="ImportTime" Val="1584068142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="wujian100_open_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/xdc/XC7A200T3B.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../wujian100_open/fpga/xdc/XC7A200T3B.xdc"/>
+        <Attr Name="ImportTime" Val="1584068141"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

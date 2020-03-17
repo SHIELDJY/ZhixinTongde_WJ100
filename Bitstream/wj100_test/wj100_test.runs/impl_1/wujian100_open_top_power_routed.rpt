@@ -1,0 +1,574 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date             : Sat Mar 14 11:12:37 2020
+| Host             : SHIELD running 64-bit major release  (build 9200)
+| Command          : report_power -file wujian100_open_top_power_routed.rpt -pb wujian100_open_top_power_summary_routed.pb -rpx wujian100_open_top_power_routed.rpx
+| Design           : wujian100_open_top
+| Device           : xc7a200tfbg484-2L
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.166        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.025        |
+| Device Static (W)        | 0.140        |
+| Effective TJA (C/W)      | 2.5          |
+| Max Ambient (C)          | 99.6         |
+| Junction Temperature (C) | 25.4         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.014 |        4 |       --- |             --- |
+| Slice Logic              |     0.003 |    45864 |       --- |             --- |
+|   LUT as Logic           |     0.003 |    26672 |    133800 |           19.93 |
+|   CARRY4                 |    <0.001 |     1508 |     33450 |            4.51 |
+|   Register               |    <0.001 |    13415 |    267600 |            5.01 |
+|   F7/F8 Muxes            |    <0.001 |      397 |    133800 |            0.30 |
+|   Others                 |     0.000 |      406 |       --- |             --- |
+|   LUT as Distributed RAM |     0.000 |       72 |     46200 |            0.16 |
+| Signals                  |     0.005 |    37815 |       --- |             --- |
+| Block RAM                |    <0.001 |       64 |       365 |           17.53 |
+| I/O                      |     0.003 |       62 |       285 |           21.75 |
+| Static Power             |     0.140 |          |           |                 |
+| Total                    |     0.166 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.054 |       0.022 |      0.031 |
+| Vccaux    |       1.800 |     0.031 |       0.000 |      0.031 |
+| Vcco33    |       3.300 |     0.006 |       0.001 |      0.005 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 2.5                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++---------------+---------------+-----------------+
+| Clock         | Domain        | Constraint (ns) |
++---------------+---------------+-----------------+
+| PAD_JTAG_TCLK | PAD_JTAG_TCLK |           500.0 |
+| PIN_EHS       | PIN_EHS       |            50.0 |
++---------------+---------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------------------+-----------+
+| Name                                            | Power (W) |
++-------------------------------------------------+-----------+
+| wujian100_open_top                              |     0.025 |
+|   PAD_GPIO_0_IOBUF_inst                         |    <0.001 |
+|   PAD_GPIO_10_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_11_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_12_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_13_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_14_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_15_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_16_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_17_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_18_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_19_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_1_IOBUF_inst                         |     0.000 |
+|   PAD_GPIO_20_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_21_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_22_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_23_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_24_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_25_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_26_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_27_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_28_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_29_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_2_IOBUF_inst                         |     0.000 |
+|   PAD_GPIO_30_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_31_IOBUF_inst                        |     0.000 |
+|   PAD_GPIO_3_IOBUF_inst                         |     0.000 |
+|   PAD_GPIO_4_IOBUF_inst                         |     0.000 |
+|   PAD_GPIO_5_IOBUF_inst                         |     0.000 |
+|   PAD_GPIO_6_IOBUF_inst                         |     0.000 |
+|   PAD_GPIO_7_IOBUF_inst                         |     0.000 |
+|   PAD_GPIO_8_IOBUF_inst                         |     0.000 |
+|   PAD_GPIO_9_IOBUF_inst                         |     0.000 |
+|   PAD_JTAG_TMS_IOBUF_inst                       |     0.000 |
+|   PAD_PWM_CH0_IOBUF_inst                        |    <0.001 |
+|   PAD_PWM_CH10_IOBUF_inst                       |    <0.001 |
+|   PAD_PWM_CH2_IOBUF_inst                        |    <0.001 |
+|   PAD_PWM_CH4_IOBUF_inst                        |    <0.001 |
+|   PAD_PWM_CH6_IOBUF_inst                        |    <0.001 |
+|   PAD_PWM_CH8_IOBUF_inst                        |    <0.001 |
+|   PAD_USI0_NSS_IOBUF_inst                       |    <0.001 |
+|   PAD_USI0_SCLK_IOBUF_inst                      |    <0.001 |
+|   PAD_USI0_SD0_IOBUF_inst                       |    <0.001 |
+|   PAD_USI0_SD1_IOBUF_inst                       |    <0.001 |
+|   PAD_USI1_NSS_IOBUF_inst                       |     0.000 |
+|   PAD_USI1_SCLK_IOBUF_inst                      |     0.000 |
+|   PAD_USI1_SD0_IOBUF_inst                       |     0.000 |
+|   PAD_USI1_SD1_IOBUF_inst                       |     0.000 |
+|   PAD_USI2_NSS_IOBUF_inst                       |    <0.001 |
+|   PAD_USI2_SCLK_IOBUF_inst                      |    <0.001 |
+|   PAD_USI2_SD0_IOBUF_inst                       |    <0.001 |
+|   PAD_USI2_SD1_IOBUF_inst                       |    <0.001 |
+|   x_aou_top                                     |    <0.001 |
+|     x_gpio_sec_top                              |    <0.001 |
+|       x_gpio0                                   |    <0.001 |
+|         x_gpio_top                              |    <0.001 |
+|           U_GPIO_APBIF                          |    <0.001 |
+|           U_GPIO_CTRL                           |    <0.001 |
+|     x_rtc0_sec_top                              |    <0.001 |
+|       x_rtc_aou_top                             |    <0.001 |
+|         x_rtc_aou_apbif                         |    <0.001 |
+|         x_rtc_cnt                               |    <0.001 |
+|         x_rtc_ig                                |    <0.001 |
+|       x_rtc_pdu_top                             |    <0.001 |
+|         x_rtc_cdr_sync                          |    <0.001 |
+|         x_rtc_clr_sync                          |    <0.001 |
+|         x_rtc_pdu_apbif                         |    <0.001 |
+|   x_cpu_top                                     |     0.004 |
+|     CPU                                         |     0.004 |
+|       x_cr_core_top                             |     0.003 |
+|         x_cr_bmu_top                            |    <0.001 |
+|           x_cr_bmu_dbus_if                      |    <0.001 |
+|           x_cr_bmu_ibus_if                      |    <0.001 |
+|         x_cr_core                               |     0.003 |
+|           x_cr_cp0_top                          |    <0.001 |
+|             x_cr_cp0_lpmd                       |    <0.001 |
+|             x_cr_cp0_oreg                       |    <0.001 |
+|             x_cr_cp0_status                     |    <0.001 |
+|           x_cr_ifu_top                          |     0.001 |
+|             x_ibuf                              |     0.001 |
+|               x_ibuf_entry_0                    |    <0.001 |
+|               x_ibuf_entry_1                    |    <0.001 |
+|               x_ibuf_entry_2                    |    <0.001 |
+|               x_ibuf_entry_3                    |    <0.001 |
+|               x_ibuf_entry_4                    |    <0.001 |
+|               x_ibuf_entry_5                    |    <0.001 |
+|             x_ibusif                            |    <0.001 |
+|             x_ifctrl                            |    <0.001 |
+|           x_cr_iu_top                           |     0.001 |
+|             x_cr_iu_mad                         |    <0.001 |
+|             x_cr_iu_oper                        |    <0.001 |
+|               x_cr_iu_oper_gpr                  |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_machine_2 |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_1    |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_10   |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_11   |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_12   |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_13   |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_14   |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_15   |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_3    |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_4    |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_5    |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_6    |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_7    |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_8    |    <0.001 |
+|                 x_cr_iu_gated_clk_reg_user_9    |    <0.001 |
+|             x_cr_iu_pcgen                       |    <0.001 |
+|             x_cr_iu_retire                      |    <0.001 |
+|             x_cr_iu_special                     |    <0.001 |
+|             x_cr_iu_vector                      |    <0.001 |
+|             x_cr_iu_wb                          |    <0.001 |
+|           x_cr_lsu_top                          |    <0.001 |
+|             x_cr_lsu_ctrl                       |    <0.001 |
+|             x_cr_lsu_dp                         |    <0.001 |
+|         x_cr_iahbl_top                          |    <0.001 |
+|           x_cr_ahbl_if                          |    <0.001 |
+|           x_cr_ahbl_req_arb                     |    <0.001 |
+|         x_cr_sahbl_top                          |    <0.001 |
+|           x_cr_ahbl_if                          |    <0.001 |
+|           x_cr_ahbl_req_arb                     |    <0.001 |
+|         x_cr_sys_io                             |    <0.001 |
+|       x_cr_had_top                              |    <0.001 |
+|         A159                                    |    <0.001 |
+|         A15a                                    |    <0.001 |
+|         A15b                                    |    <0.001 |
+|         A15d                                    |    <0.001 |
+|           A1862d                                |    <0.001 |
+|           A74                                   |    <0.001 |
+|           A75                                   |    <0.001 |
+|         A18545                                  |    <0.001 |
+|         A18546                                  |    <0.001 |
+|         A18547                                  |    <0.001 |
+|         A18548                                  |    <0.001 |
+|         A18549                                  |    <0.001 |
+|       x_cr_tcipif_top                           |    <0.001 |
+|         x_cr_clic_top                           |    <0.001 |
+|           INT_KID[0].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[10].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[11].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[12].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[13].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[14].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[15].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[16].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[17].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[18].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[19].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[1].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[20].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[21].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[22].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[23].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[24].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[25].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[26].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[27].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[28].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[29].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[2].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[30].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[31].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[32].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[33].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[34].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[35].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[36].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[37].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[38].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[39].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[3].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[40].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[41].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[42].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[43].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[44].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[45].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[46].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[47].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[48].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[49].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[4].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[50].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[51].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[52].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[53].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[54].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[55].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[56].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[57].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[58].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[59].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[5].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[60].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[61].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[62].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[63].x_cr_clic_kid             |    <0.001 |
+|           INT_KID[6].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[7].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[8].x_cr_clic_kid              |    <0.001 |
+|           INT_KID[9].x_cr_clic_kid              |    <0.001 |
+|           x_cr_clic_arb                         |    <0.001 |
+|         x_cr_coretim_top                        |    <0.001 |
+|         x_cr_tcipif_dbus                        |    <0.001 |
+|         x_cr_tcipif_ibus                        |    <0.001 |
+|   x_pdu_top                                     |     0.017 |
+|     x_main_bus_top                              |     0.009 |
+|       x_ahb_matrix_7_12_main                    |     0.002 |
+|         x_matrix_arb                            |    <0.001 |
+|         x_matrix_dec                            |     0.001 |
+|       x_dmac_top                                |     0.007 |
+|         x_ahbbusmux_ctrl                        |    <0.001 |
+|         x_arb_ctrl                              |    <0.001 |
+|           U_CH0TRGLATCH                         |    <0.001 |
+|           U_CH10TRGLATCH                        |    <0.001 |
+|           U_CH11TRGLATCH                        |    <0.001 |
+|           U_CH12TRGLATCH                        |    <0.001 |
+|           U_CH13TRGLATCH                        |    <0.001 |
+|           U_CH14TRGLATCH                        |    <0.001 |
+|           U_CH15TRGLATCH                        |    <0.001 |
+|           U_CH1TRGLATCH                         |    <0.001 |
+|           U_CH2TRGLATCH                         |    <0.001 |
+|           U_CH3TRGLATCH                         |    <0.001 |
+|           U_CH4TRGLATCH                         |    <0.001 |
+|           U_CH5TRGLATCH                         |    <0.001 |
+|           U_CH6TRGLATCH                         |    <0.001 |
+|           U_CH7TRGLATCH                         |    <0.001 |
+|           U_CH8TRGLATCH                         |    <0.001 |
+|           U_CH9TRGLATCH                         |    <0.001 |
+|           U_HPCHNS                              |    <0.001 |
+|         x_chfsm_ctrl                            |     0.004 |
+|           x_fsmc0                               |    <0.001 |
+|           x_fsmc1                               |    <0.001 |
+|           x_fsmc10                              |    <0.001 |
+|           x_fsmc11                              |    <0.001 |
+|           x_fsmc12                              |    <0.001 |
+|           x_fsmc13                              |    <0.001 |
+|           x_fsmc14                              |    <0.001 |
+|           x_fsmc15                              |    <0.001 |
+|           x_fsmc2                               |    <0.001 |
+|           x_fsmc3                               |    <0.001 |
+|           x_fsmc4                               |    <0.001 |
+|           x_fsmc5                               |    <0.001 |
+|           x_fsmc6                               |    <0.001 |
+|           x_fsmc7                               |    <0.001 |
+|           x_fsmc8                               |    <0.001 |
+|           x_fsmc9                               |    <0.001 |
+|         x_reg_ctrl                              |     0.003 |
+|           x_chregc0                             |    <0.001 |
+|           x_chregc1                             |    <0.001 |
+|           x_chregc10                            |    <0.001 |
+|           x_chregc11                            |    <0.001 |
+|           x_chregc12                            |    <0.001 |
+|           x_chregc13                            |    <0.001 |
+|           x_chregc14                            |    <0.001 |
+|           x_chregc15                            |    <0.001 |
+|           x_chregc2                             |    <0.001 |
+|           x_chregc3                             |    <0.001 |
+|           x_chregc4                             |    <0.001 |
+|           x_chregc5                             |    <0.001 |
+|           x_chregc6                             |    <0.001 |
+|           x_chregc7                             |    <0.001 |
+|           x_chregc8                             |    <0.001 |
+|           x_chregc9                             |    <0.001 |
+|           x_gbregc                              |    <0.001 |
+|     x_sub_apb0_top                              |     0.007 |
+|       x_apb0_sub_top                            |    <0.001 |
+|         U_APB0_STATE_CTRL                       |    <0.001 |
+|       x_pwm_sec_top                             |     0.003 |
+|         x_pwm                                   |     0.003 |
+|           x_pwm_apbif                           |     0.002 |
+|           x_pwm_ctrl                            |     0.002 |
+|             pwm_0_inst                          |    <0.001 |
+|             pwm_1_inst                          |    <0.001 |
+|             pwm_2_inst                          |    <0.001 |
+|             pwm_3_inst                          |    <0.001 |
+|             pwm_4_inst                          |    <0.001 |
+|             pwm_5_inst                          |    <0.001 |
+|       x_tim0_sec_top                            |    <0.001 |
+|         x_tim_top                               |    <0.001 |
+|           x_timers_top                          |    <0.001 |
+|             U_TIMER0                            |    <0.001 |
+|             U_TIMER1                            |    <0.001 |
+|             U_TIMERS_APBIF                      |    <0.001 |
+|       x_tim2_sec_top                            |    <0.001 |
+|         x_tim2_tim_top                          |    <0.001 |
+|           x_timers_top                          |    <0.001 |
+|             U_TIMER0                            |    <0.001 |
+|             U_TIMER1                            |    <0.001 |
+|             U_TIMERS_APBIF                      |    <0.001 |
+|       x_tim4_sec_top                            |    <0.001 |
+|         x_tim4_tim_top                          |    <0.001 |
+|           x_timers_top                          |    <0.001 |
+|             U_TIMER0                            |    <0.001 |
+|             U_TIMER1                            |    <0.001 |
+|             U_TIMERS_APBIF                      |    <0.001 |
+|       x_tim6_sec_top                            |    <0.001 |
+|         x_tim6_tim_top                          |    <0.001 |
+|           x_timers_top                          |    <0.001 |
+|             U_TIMER0                            |    <0.001 |
+|             U_TIMER1                            |    <0.001 |
+|             U_TIMERS_APBIF                      |    <0.001 |
+|       x_usi0_sec_top                            |     0.001 |
+|         x_usi0                                  |     0.001 |
+|           x_apb_if                              |    <0.001 |
+|           x_i2c_top                             |    <0.001 |
+|             x_i2cm                              |    <0.001 |
+|             x_i2cs                              |    <0.001 |
+|           x_rx_sync_fifo_16x16                  |    <0.001 |
+|             mem_fifo_reg_0_15_0_5               |    <0.001 |
+|             mem_fifo_reg_0_15_12_15             |    <0.001 |
+|             mem_fifo_reg_0_15_6_11              |    <0.001 |
+|           x_sdata_if                            |    <0.001 |
+|           x_spi                                 |    <0.001 |
+|           x_tx_sync_fifo_16x16                  |    <0.001 |
+|             mem_fifo_reg_0_15_0_5               |    <0.001 |
+|             mem_fifo_reg_0_15_12_15             |    <0.001 |
+|             mem_fifo_reg_0_15_6_11              |    <0.001 |
+|           x_uart                                |    <0.001 |
+|       x_usi2_sec_top                            |     0.001 |
+|         x_usi2                                  |     0.001 |
+|           x_apb_if                              |    <0.001 |
+|           x_i2c_top                             |    <0.001 |
+|             x_i2cm                              |    <0.001 |
+|             x_i2cs                              |    <0.001 |
+|           x_rx_sync_fifo_16x16                  |    <0.001 |
+|             mem_fifo_reg_0_15_0_5               |    <0.001 |
+|             mem_fifo_reg_0_15_12_15             |    <0.001 |
+|             mem_fifo_reg_0_15_6_11              |    <0.001 |
+|           x_sdata_if                            |    <0.001 |
+|           x_spi                                 |    <0.001 |
+|           x_tx_sync_fifo_16x16                  |    <0.001 |
+|             mem_fifo_reg_0_15_0_5               |    <0.001 |
+|             mem_fifo_reg_0_15_12_15             |    <0.001 |
+|             mem_fifo_reg_0_15_6_11              |    <0.001 |
+|           x_uart                                |    <0.001 |
+|       x_wdt_sec_top                             |    <0.001 |
+|         x_wdt                                   |    <0.001 |
+|           U_WDT_BIU                             |    <0.001 |
+|           U_WDT_ISRC                            |    <0.001 |
+|             U_WDT_CNT                           |    <0.001 |
+|             U_WDT_ISRG                          |    <0.001 |
+|           U_WDT_REGFILE                         |    <0.001 |
+|     x_sub_apb1_top                              |     0.002 |
+|       x_apb1_sub_top                            |    <0.001 |
+|         U_APB1_STATE_CTRL                       |    <0.001 |
+|       x_tim1_sec_top                            |    <0.001 |
+|         x_tim1_tim_top                          |    <0.001 |
+|           x_timers_top                          |    <0.001 |
+|             U_TIMER0                            |    <0.001 |
+|             U_TIMER1                            |    <0.001 |
+|             U_TIMERS_APBIF                      |    <0.001 |
+|       x_tim3_sec_top                            |    <0.001 |
+|         x_tim3_tim_top                          |    <0.001 |
+|           x_timers_top                          |    <0.001 |
+|             U_TIMER0                            |    <0.001 |
+|             U_TIMER1                            |    <0.001 |
+|             U_TIMERS_APBIF                      |    <0.001 |
+|       x_tim5_sec_top                            |    <0.001 |
+|         x_tim5_tim_top                          |    <0.001 |
+|           x_timers_top                          |    <0.001 |
+|             U_TIMER0                            |    <0.001 |
+|             U_TIMER1                            |    <0.001 |
+|             U_TIMERS_APBIF                      |    <0.001 |
+|       x_tim7_sec_top                            |    <0.001 |
+|         x_tim7_tim_top                          |    <0.001 |
+|           x_timers_top                          |    <0.001 |
+|             U_TIMER0                            |    <0.001 |
+|             U_TIMER1                            |    <0.001 |
+|             U_TIMERS_APBIF                      |    <0.001 |
+|       x_usi1_sec_top                            |     0.001 |
+|         x_usi1                                  |     0.001 |
+|           x_apb_if                              |    <0.001 |
+|           x_i2c_top                             |    <0.001 |
+|             x_i2cm                              |    <0.001 |
+|             x_i2cs                              |    <0.001 |
+|           x_rx_sync_fifo_16x16                  |    <0.001 |
+|             mem_fifo_reg_0_15_0_5               |    <0.001 |
+|             mem_fifo_reg_0_15_12_15             |    <0.001 |
+|             mem_fifo_reg_0_15_6_11              |    <0.001 |
+|           x_sdata_if                            |    <0.001 |
+|           x_spi                                 |    <0.001 |
+|           x_tx_sync_fifo_16x16                  |    <0.001 |
+|             mem_fifo_reg_0_15_0_5               |    <0.001 |
+|             mem_fifo_reg_0_15_12_15             |    <0.001 |
+|             mem_fifo_reg_0_15_6_11              |    <0.001 |
+|           x_uart                                |    <0.001 |
+|     x_sub_ls_top                                |    <0.001 |
+|       x_sub_ls_top                              |    <0.001 |
+|         x_matrix_sub_dec                        |    <0.001 |
+|   x_retu_top                                    |    <0.001 |
+|     x_smu_top                                   |    <0.001 |
+|       x_sms_top                                 |    <0.001 |
+|         x_isram_top                             |    <0.001 |
+|           x_sms_sms_ahbs                        |    <0.001 |
+|           x_sms_sram                            |    <0.001 |
+|             x_fpga_spram                        |    <0.001 |
+|               x_fpga_byte0_spram                |    <0.001 |
+|               x_fpga_byte1_spram                |    <0.001 |
+|               x_fpga_byte2_spram                |    <0.001 |
+|               x_fpga_byte3_spram                |    <0.001 |
+|         x_sms0_top                              |    <0.001 |
+|           x_sms_sms_ahbs                        |    <0.001 |
+|           x_sms_sram                            |    <0.001 |
+|             x_fpga_spram                        |    <0.001 |
+|               x_fpga_byte0_spram                |    <0.001 |
+|               x_fpga_byte1_spram                |    <0.001 |
+|               x_fpga_byte2_spram                |    <0.001 |
+|               x_fpga_byte3_spram                |    <0.001 |
+|         x_sms1_top                              |    <0.001 |
+|           x_sms_sms_ahbs                        |    <0.001 |
+|           x_sms_sram                            |    <0.001 |
+|             x_fpga_spram                        |    <0.001 |
+|               x_fpga_byte0_spram                |    <0.001 |
+|               x_fpga_byte1_spram                |    <0.001 |
+|               x_fpga_byte2_spram                |    <0.001 |
+|               x_fpga_byte3_spram                |    <0.001 |
+|         x_sms2_top                              |    <0.001 |
+|           x_sms_sms_ahbs                        |    <0.001 |
+|           x_sms_sram                            |    <0.001 |
+|             x_fpga_spram                        |    <0.001 |
+|               x_fpga_byte0_spram                |    <0.001 |
+|               x_fpga_byte1_spram                |    <0.001 |
+|               x_fpga_byte2_spram                |    <0.001 |
+|               x_fpga_byte3_spram                |    <0.001 |
++-------------------------------------------------+-----------+
+
+
