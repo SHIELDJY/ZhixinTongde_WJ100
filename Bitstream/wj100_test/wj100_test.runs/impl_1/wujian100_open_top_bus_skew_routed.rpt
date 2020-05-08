@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Mar 14 11:12:47 2020
+| Date         : Thu Mar 26 17:42:32 2020
 | Host         : SHIELD running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file wujian100_open_top_bus_skew_routed.rpt -pb wujian100_open_top_bus_skew_routed.pb -rpx wujian100_open_top_bus_skew_routed.rpx
 | Design       : wujian100_open_top

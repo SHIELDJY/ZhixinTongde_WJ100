@@ -22,15 +22,30 @@ set_property IOSTANDARD LVCMOS33 [get_ports]
 # Create clock
 #===========================================
 #create_clock  -period 50.00 -name MAIN_CLK [get_ports PIN_EHS]
-create_clock -period 50.00 -name PIN_EHS [get_ports PIN_EHS]
-create_clock -period 500.00 -name PAD_JTAG_TCLK [get_ports PAD_JTAG_TCLK]
-create_clock -period 1000.00 -name I_RTC_EXT_CLK [get_cells x_aou_top/x_rtc0_sec_top/x_rtc_aou_top/x_rtc_clk_div/i_rtc_ext_clk]
-create_clock -period 2000.00 -name RTC_CLK_DIV [get_cells x_aou_top/x_rtc0_sec_top/x_rtc_aou_top/x_rtc_clk_div/rtc_clk_div]
-create_clock -period 200.00 -name CLKDIV [get_cells x_pdu_top/x_sub_apb0_top/x_pwm_sec_top/x_pwm/x_pwm_ctrl/clkdiv]
+create_clock -name {EHS} [get_ports PIN_EHS] -period 50 -waveform {0 25}
+create_clock  -name {JTAG_CLK} [get_ports PAD_JTAG_TCLK] -period 1000 -waveform {0 500}
 
-set_clock_groups -name clkgroup_2 -asynchronous -group [get_clocks PIN_EHS] -group [get_clocks CLKDIV]
-set_clock_groups -name clkgroup_3 -asynchronous -group [get_clocks PAD_JTAG_TCLK]
-set_clock_groups -name clkgroup_4 -asynchronous -group [get_clocks I_RTC_EXT_CLK]  -group [get_clocks RTC_CLK_DIV]
+set_clock_groups -asynchronous -name {clkgroup_1} -group [get_clocks {EHS JTAG_CLK}]
+
+set_false_path -through [get_ports PIN_EHS]
+
+#set_clock_groups -name {Inferred_clkgroup_0} -asynchronous -group [get_clocks {wujian100_open_top|PAD_JTAG_TCLK}]
+
+set_property ASYNC_REG TRUE [get_cells {x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_clr_sync/pclk_load_sync2_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_clr_sync/rtc_load_sync2_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_clr_sync/pclk_load_sync1_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_clr_sync/rtc_load_sync1_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_cpu_top/CPU/x_cr_had_top/A15d/A74/A10b_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_cpu_top/CPU/x_cr_had_top/A15d/A74/A18597_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_cpu_top/CPU/x_cr_had_top/A15d/A1862d/A10b_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_cpu_top/CPU/x_cr_had_top/A15d/A1862d/A18597_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_cpu_top/CPU/x_cr_had_top/A15d/A75/A10b_reg}]
+set_property ASYNC_REG TRUE [get_cells {x_cpu_top/CPU/x_cr_had_top/A15d/A75/A18597_reg}]
+
+#Constraints which are not forward annotated in XDC and intentionally commented out (unused and unsupported constraints)
+
+#User specified region constraints
+
 #===========================================
 # Global clock and reset source
 #===========================================

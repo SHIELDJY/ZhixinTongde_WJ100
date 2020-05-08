@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Mar 14 10:45:56 2020
-# Process ID: 4308
+# Start of session at: Thu Mar 26 17:12:49 2020
+# Process ID: 15216
 # Current directory: E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.runs/synth_1
 # Command line: vivado.exe -log wujian100_open_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wujian100_open_top.tcl
 # Log file: E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.runs/synth_1/wujian100_open_top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11752 
+INFO: Helper process launched with PID 2152 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 441.855 ; gain = 130.031
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 442.770 ; gain = 130.152
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'wujian100_open_top' [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/sources_1/imports/wujian100_open/fpga/wujian100_open_fpga_top.v:39]
 INFO: [Synth 8-6157] synthesizing module 'aou_top' [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/sources_1/imports/wujian100_open/soc/aou_top.v:11]
@@ -1343,7 +1343,7 @@ WARNING: [Synth 8-3331] design cr_clic_arb has unconnected port ctrl_arb_int_sec
 WARNING: [Synth 8-3331] design cr_clic_arb has unconnected port ctrl_arb_int_sec[15]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 882.719 ; gain = 570.895
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 880.156 ; gain = 567.539
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1356,10 +1356,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 882.719 ; gain = 570.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 880.156 ; gain = 567.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 882.719 ; gain = 570.895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 880.156 ; gain = 567.539
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2L
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1367,30 +1367,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc]
-WARNING: [Vivado 12-180] No cells matched 'x_aou_top/x_rtc0_sec_top/x_rtc_aou_top/x_rtc_clk_div/i_rtc_ext_clk'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:27]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_cells x_aou_top/x_rtc0_sec_top/x_rtc_aou_top/x_rtc_clk_div/i_rtc_ext_clk]'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:27]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-180] No cells matched 'x_aou_top/x_rtc0_sec_top/x_rtc_aou_top/x_rtc_clk_div/rtc_clk_div'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:28]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_cells x_aou_top/x_rtc0_sec_top/x_rtc_aou_top/x_rtc_clk_div/rtc_clk_div]'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:28]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-180] No cells matched 'x_pdu_top/x_sub_apb0_top/x_pwm_sec_top/x_pwm/x_pwm_ctrl/clkdiv'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:29]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_cells x_pdu_top/x_sub_apb0_top/x_pwm_sec_top/x_pwm/x_pwm_ctrl/clkdiv]'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:29]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-627] No clocks matched 'CLKDIV'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:31]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:31]
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks CLKDIV]'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:31]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:31]
-WARNING: [Vivado 12-627] No clocks matched 'I_RTC_EXT_CLK'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:33]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:33]
-WARNING: [Vivado 12-627] No clocks matched 'RTC_CLK_DIV'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:33]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:33]
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks I_RTC_EXT_CLK]'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:33]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks RTC_CLK_DIV]'. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:33]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:33]
-WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: PAD_JTAG_TCLK). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:41]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: PAD_JTAG_TCLK). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc:56]
 Finished Parsing XDC File [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wujian100_open_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/wujian100_open_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -1399,9 +1376,9 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1354.414 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1357.898 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1354.414 ; gain = 1042.590
+Finished Constraint Validation : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1357.898 ; gain = 1045.281
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -1409,13 +1386,23 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1354.414 ; gain = 1042.590
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1357.898 ; gain = 1045.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property ASYNC_REG = true for x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_clr_sync/pclk_load_sync2_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 34).
+Applied set_property ASYNC_REG = true for x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_clr_sync/rtc_load_sync2_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 35).
+Applied set_property ASYNC_REG = true for x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_clr_sync/pclk_load_sync1_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 36).
+Applied set_property ASYNC_REG = true for x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_clr_sync/rtc_load_sync1_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 37).
+Applied set_property ASYNC_REG = true for x_cpu_top/CPU/x_cr_had_top/A15d/A74/A10b_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 38).
+Applied set_property ASYNC_REG = true for x_cpu_top/CPU/x_cr_had_top/A15d/A74/A18597_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 39).
+Applied set_property ASYNC_REG = true for x_cpu_top/CPU/x_cr_had_top/A15d/A1862d/A10b_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 40).
+Applied set_property ASYNC_REG = true for x_cpu_top/CPU/x_cr_had_top/A15d/A1862d/A18597_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 41).
+Applied set_property ASYNC_REG = true for x_cpu_top/CPU/x_cr_had_top/A15d/A75/A10b_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 42).
+Applied set_property ASYNC_REG = true for x_cpu_top/CPU/x_cr_had_top/A15d/A75/A18597_reg. (constraint file  E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.srcs/constrs_1/imports/xdc/XC7A200T3B.xdc, line 43).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1354.414 ; gain = 1042.590
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1357.898 ; gain = 1045.281
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "gpio_int_level_sync_wen" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "gpio_int_en_wen" won't be mapped to RAM because it is too sparse
@@ -1671,7 +1658,7 @@ INFO: [Synth 8-5546] ROM "A1864a" won't be mapped to RAM because it is too spars
      WAIT_WRDY_DRADR_BUS |                              100 |                            00100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'hbus_stt_reg' using encoding 'sequential' in module 'fsmc'
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'cstate_reg' in module 'fsm1FC5EB67E200'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cstate_reg' in module 'fsm1BFF01C2BF00'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1713,7 +1700,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'i2cs_fsm_reg' using encodi
                SPIM_STOP |                               11 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'spim_fsm_reg' using encoding 'sequential' in module 'spi'
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'cstate_reg' in module 'fsm1FC03CD85E00'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cstate_reg' in module 'fsm1BFB20DA3100'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1817,7 +1804,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'A1865c_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'A1864b_reg' using encoding 'one-hot' in module 'A1864d'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:20 ; elapsed = 00:02:27 . Memory (MB): peak = 1354.414 ; gain = 1042.590
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:24 ; elapsed = 00:02:33 . Memory (MB): peak = 1357.898 ; gain = 1045.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -4328,11 +4315,11 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 11    
-Module A10a__1 
+Module A10a__xdcDup__1 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 4     
-Module A10a__2 
+Module A10a__xdcDup__2 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 4     
@@ -5719,7 +5706,7 @@ INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_c
 INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_sys_io/sysio_pad_lpmd_b_reg[1]' (FDPE) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_sys_io/sysio_pad_lpmd_b_reg[0]'
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:45 ; elapsed = 00:07:12 . Memory (MB): peak = 1354.414 ; gain = 1042.590
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:01 ; elapsed = 00:07:30 . Memory (MB): peak = 1357.898 ; gain = 1045.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5852,7 +5839,7 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:00 ; elapsed = 00:07:29 . Memory (MB): peak = 1354.414 ; gain = 1042.590
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:17 ; elapsed = 00:07:49 . Memory (MB): peak = 1357.898 ; gain = 1045.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -5889,7 +5876,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cp
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top /\INT_KID[53].x_cr_clic_kid /int_pending_reg)
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:10:22 ; elapsed = 00:10:55 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished Timing Optimization : Time (s): cpu = 00:11:00 ; elapsed = 00:11:35 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5990,7 +5977,7 @@ INFO: [Synth 8-4480] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_
 INFO: [Synth 8-4480] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:10:53 ; elapsed = 00:11:58 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished Technology Mapping : Time (s): cpu = 00:11:30 ; elapsed = 00:12:34 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6024,7 +6011,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:11:04 ; elapsed = 00:12:11 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished IO Insertion : Time (s): cpu = 00:11:42 ; elapsed = 00:12:47 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -6037,7 +6024,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:11:05 ; elapsed = 00:12:12 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished Renaming Generated Instances : Time (s): cpu = 00:11:42 ; elapsed = 00:12:47 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6049,25 +6036,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:20 ; elapsed = 00:12:29 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:56 ; elapsed = 00:13:01 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:11:23 ; elapsed = 00:12:33 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished Renaming Generated Ports : Time (s): cpu = 00:11:59 ; elapsed = 00:13:04 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:11:25 ; elapsed = 00:12:35 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished Handling Custom Attributes : Time (s): cpu = 00:12:01 ; elapsed = 00:13:06 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:11:26 ; elapsed = 00:12:35 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished Renaming Generated Nets : Time (s): cpu = 00:12:01 ; elapsed = 00:13:06 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -6139,11 +6126,11 @@ Report Instance Areas:
 |28    |          x_cr_ifu_top                          |cr_ifu_top                 |  1987|
 |29    |            x_ibuf                              |cr_ifu_ibuf                |  1851|
 |30    |              x_ibuf_entry_0                    |cr_ifu_ibuf_entry          |    32|
-|31    |              x_ibuf_entry_1                    |cr_ifu_ibuf_entry_195      |    57|
-|32    |              x_ibuf_entry_2                    |cr_ifu_ibuf_entry_196      |  1491|
-|33    |              x_ibuf_entry_3                    |cr_ifu_ibuf_entry_197      |   113|
-|34    |              x_ibuf_entry_4                    |cr_ifu_ibuf_entry_198      |    45|
-|35    |              x_ibuf_entry_5                    |cr_ifu_ibuf_entry_199      |    95|
+|31    |              x_ibuf_entry_1                    |cr_ifu_ibuf_entry_193      |    57|
+|32    |              x_ibuf_entry_2                    |cr_ifu_ibuf_entry_194      |  1491|
+|33    |              x_ibuf_entry_3                    |cr_ifu_ibuf_entry_195      |   113|
+|34    |              x_ibuf_entry_4                    |cr_ifu_ibuf_entry_196      |    45|
+|35    |              x_ibuf_entry_5                    |cr_ifu_ibuf_entry_197      |    95|
 |36    |            x_ibusif                            |cr_ifu_ibusif              |    58|
 |37    |            x_ifctrl                            |cr_ifu_ifctrl              |    78|
 |38    |          x_cr_iu_top                           |cr_iu_top                  |  2789|
@@ -6152,19 +6139,19 @@ Report Instance Areas:
 |41    |              x_cr_iu_oper_gpr                  |cr_iu_oper_gpr             |   870|
 |42    |                x_cr_iu_gated_clk_reg_machine_2 |cr_iu_gated_clk_reg_timing |    32|
 |43    |                x_cr_iu_gated_clk_reg_user_1    |cr_iu_gated_clk_reg        |    32|
-|44    |                x_cr_iu_gated_clk_reg_user_10   |cr_iu_gated_clk_reg_182    |    32|
-|45    |                x_cr_iu_gated_clk_reg_user_11   |cr_iu_gated_clk_reg_183    |   132|
-|46    |                x_cr_iu_gated_clk_reg_user_12   |cr_iu_gated_clk_reg_184    |    32|
-|47    |                x_cr_iu_gated_clk_reg_user_13   |cr_iu_gated_clk_reg_185    |    32|
-|48    |                x_cr_iu_gated_clk_reg_user_14   |cr_iu_gated_clk_reg_186    |    32|
-|49    |                x_cr_iu_gated_clk_reg_user_15   |cr_iu_gated_clk_reg_187    |   128|
-|50    |                x_cr_iu_gated_clk_reg_user_3    |cr_iu_gated_clk_reg_188    |   162|
-|51    |                x_cr_iu_gated_clk_reg_user_4    |cr_iu_gated_clk_reg_189    |    32|
-|52    |                x_cr_iu_gated_clk_reg_user_5    |cr_iu_gated_clk_reg_190    |    32|
-|53    |                x_cr_iu_gated_clk_reg_user_6    |cr_iu_gated_clk_reg_191    |    32|
-|54    |                x_cr_iu_gated_clk_reg_user_7    |cr_iu_gated_clk_reg_192    |    96|
-|55    |                x_cr_iu_gated_clk_reg_user_8    |cr_iu_gated_clk_reg_193    |    32|
-|56    |                x_cr_iu_gated_clk_reg_user_9    |cr_iu_gated_clk_reg_194    |    32|
+|44    |                x_cr_iu_gated_clk_reg_user_10   |cr_iu_gated_clk_reg_180    |    32|
+|45    |                x_cr_iu_gated_clk_reg_user_11   |cr_iu_gated_clk_reg_181    |   132|
+|46    |                x_cr_iu_gated_clk_reg_user_12   |cr_iu_gated_clk_reg_182    |    32|
+|47    |                x_cr_iu_gated_clk_reg_user_13   |cr_iu_gated_clk_reg_183    |    32|
+|48    |                x_cr_iu_gated_clk_reg_user_14   |cr_iu_gated_clk_reg_184    |    32|
+|49    |                x_cr_iu_gated_clk_reg_user_15   |cr_iu_gated_clk_reg_185    |   128|
+|50    |                x_cr_iu_gated_clk_reg_user_3    |cr_iu_gated_clk_reg_186    |   162|
+|51    |                x_cr_iu_gated_clk_reg_user_4    |cr_iu_gated_clk_reg_187    |    32|
+|52    |                x_cr_iu_gated_clk_reg_user_5    |cr_iu_gated_clk_reg_188    |    32|
+|53    |                x_cr_iu_gated_clk_reg_user_6    |cr_iu_gated_clk_reg_189    |    32|
+|54    |                x_cr_iu_gated_clk_reg_user_7    |cr_iu_gated_clk_reg_190    |    96|
+|55    |                x_cr_iu_gated_clk_reg_user_8    |cr_iu_gated_clk_reg_191    |    32|
+|56    |                x_cr_iu_gated_clk_reg_user_9    |cr_iu_gated_clk_reg_192    |    32|
 |57    |            x_cr_iu_pcgen                       |cr_iu_pcgen                |   156|
 |58    |            x_cr_iu_retire                      |cr_iu_retire               |   159|
 |59    |            x_cr_iu_special                     |cr_iu_special              |     1|
@@ -6174,8 +6161,8 @@ Report Instance Areas:
 |63    |            x_cr_lsu_ctrl                       |cr_lsu_ctrl                |     4|
 |64    |            x_cr_lsu_dp                         |cr_lsu_dp                  |    84|
 |65    |        x_cr_iahbl_top                          |cr_iahbl_top               |    61|
-|66    |          x_cr_ahbl_if                          |cr_ahbl_if_180             |    27|
-|67    |          x_cr_ahbl_req_arb                     |cr_ahbl_req_arb_181        |    34|
+|66    |          x_cr_ahbl_if                          |cr_ahbl_if_178             |    27|
+|67    |          x_cr_ahbl_req_arb                     |cr_ahbl_req_arb_179        |    34|
 |68    |        x_cr_sahbl_top                          |cr_sahbl_top               |   117|
 |69    |          x_cr_ahbl_if                          |cr_ahbl_if                 |    74|
 |70    |          x_cr_ahbl_req_arb                     |cr_ahbl_req_arb            |    43|
@@ -6185,9 +6172,9 @@ Report Instance Areas:
 |74    |        A15a                                    |A15                        |     9|
 |75    |        A15b                                    |A1867b                     |     4|
 |76    |        A15d                                    |A1864d                     |   180|
-|77    |          A1862d                                |A10a                       |     5|
-|78    |          A74                                   |A10a_178                   |    15|
-|79    |          A75                                   |A10a_179                   |    10|
+|77    |          A1862d                                |A10a__xdcDup__2            |     5|
+|78    |          A74                                   |A10a__xdcDup__1            |    15|
+|79    |          A75                                   |A10a                       |    10|
 |80    |        A18545                                  |A7f                        |   618|
 |81    |        A18546                                  |A45                        |    46|
 |82    |        A18547                                  |A15_175                    |    10|
@@ -6467,11 +6454,11 @@ Report Instance Areas:
 |356   |              x_fpga_byte3_spram                |fpga_byte_spram_5          |     7|
 +------+------------------------------------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:11:26 ; elapsed = 00:12:35 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Finished Writing Synthesis Report : Time (s): cpu = 00:12:01 ; elapsed = 00:13:06 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 887 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:10:08 ; elapsed = 00:12:02 . Memory (MB): peak = 1585.664 ; gain = 802.145
-Synthesis Optimization Complete : Time (s): cpu = 00:11:26 ; elapsed = 00:12:40 . Memory (MB): peak = 1585.664 ; gain = 1273.840
+Synthesis Optimization Runtime : Time (s): cpu = 00:10:43 ; elapsed = 00:12:32 . Memory (MB): peak = 1589.617 ; gain = 799.258
+Synthesis Optimization Complete : Time (s): cpu = 00:12:01 ; elapsed = 00:13:12 . Memory (MB): peak = 1589.617 ; gain = 1277.000
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2042 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
@@ -6483,12 +6470,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-865 Infos, 337 Warnings, 8 Critical Warnings and 0 Errors encountered.
+862 Infos, 331 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:11:47 ; elapsed = 00:13:04 . Memory (MB): peak = 1585.664 ; gain = 1286.664
+synth_design: Time (s): cpu = 00:12:24 ; elapsed = 00:13:36 . Memory (MB): peak = 1589.617 ; gain = 1290.012
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'E:/Documents/GitHub/ZhixinTongde_WJ100/Bitstream/wj100_test/wj100_test.runs/synth_1/wujian100_open_top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1585.664 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1589.617 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file wujian100_open_top_utilization_synth.rpt -pb wujian100_open_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.582 . Memory (MB): peak = 1585.664 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 10:59:26 2020...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.539 . Memory (MB): peak = 1589.617 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 26 17:26:54 2020...

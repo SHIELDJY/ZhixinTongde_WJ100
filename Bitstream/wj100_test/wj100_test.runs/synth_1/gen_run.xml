@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-2L" LaunchTime="1584153952">
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-2L" LaunchTime="1585213963">
   <File Type="PA-TCL" Name="wujian100_open_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="wujian100_open_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="wujian100_open_top_reports.tcl"/>
@@ -397,9 +397,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
