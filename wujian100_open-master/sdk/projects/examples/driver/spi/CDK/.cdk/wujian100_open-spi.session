@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="C:\Users\Administrator\Desktop\wujian100_open-master\sdk\projects\examples\driver\spi\CDK\wujian100_open-spi.cdkws">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\Administrator\Desktop\wujian100_open-master\sdk\projects\examples\driver\spi\CDK\wujian100_open-spi.cdkws" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="C:\Users\Administrator\Desktop\wujian100_open-master\sdk\projects\examples\driver\spi\example_spi.c" Name="FileName"/>
+      <int Value="175" Name="FirstVisibleLine"/>
+      <int Value="193" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Administrator\Desktop\wujian100_open-master\sdk\board\wujian100_open_evb\include\pin.h" Name="FileName"/>
+      <int Value="26" Name="FirstVisibleLine"/>
+      <int Value="41" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+</Session>
