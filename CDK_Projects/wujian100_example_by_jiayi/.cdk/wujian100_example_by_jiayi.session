@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="E:\Documents\GitHub\ZhixinTongde_WJ100\CDK_Projects\wujian100_example_by_jiayi\wujian100_example_by_jiayi.cdkws">
-  <int Value="0" Name="m_selectedTab"/>
+  <int Value="3" Name="m_selectedTab"/>
   <wxString Value="E:\Documents\GitHub\ZhixinTongde_WJ100\CDK_Projects\wujian100_example_by_jiayi\wujian100_example_by_jiayi.cdkws" Name="m_workspaceName"/>
-  <TabInfoArray Name="TabInfoArray"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="E:\Documents\GitHub\ZhixinTongde_WJ100\CDK_Projects\wujian100_example_by_jiayi\example_proj_jiayi\main\main.c" Name="FileName"/>
+      <int Value="25" Name="FirstVisibleLine"/>
+      <int Value="42" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\Documents\GitHub\ZhixinTongde_WJ100\CDK_Projects\wujian100_example_by_jiayi\example_proj_jiayi\board\wujian100_open_evb\board_init.c" Name="FileName"/>
+      <int Value="23" Name="FirstVisibleLine"/>
+      <int Value="25" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\Documents\GitHub\ZhixinTongde_WJ100\CDK_Projects\wujian100_example_by_jiayi\example_proj_jiayi\user_lib\inc\user_timer.h" Name="FileName"/>
+      <int Value="87" Name="FirstVisibleLine"/>
+      <int Value="100" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\Documents\GitHub\ZhixinTongde_WJ100\CDK_Projects\wujian100_example_by_jiayi\example_proj_jiayi\user_lib\src\user_timer.c" Name="FileName"/>
+      <int Value="152" Name="FirstVisibleLine"/>
+      <int Value="175" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
     <long Value="0" Name="Count"/>
   </SerializedObject>
