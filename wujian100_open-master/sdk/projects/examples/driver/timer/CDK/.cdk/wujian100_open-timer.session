@@ -5,27 +5,8 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="C:\Users\Administrator\Documents\GitHub\ZhixinTongde_WJ100\wujian100_open-master\sdk\projects\examples\driver\timer\example_timer.c" Name="FileName"/>
-      <int Value="5" Name="FirstVisibleLine"/>
-      <int Value="53" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds">
-        <IntVectorItem Value="57"/>
-        <IntVectorItem Value="80"/>
-        <IntVectorItem Value="104"/>
-        <IntVectorItem Value="142"/>
-      </IntVector>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Administrator\Documents\GitHub\ZhixinTongde_WJ100\wujian100_open-master\sdk\projects\examples\driver\timer\oled.c" Name="FileName"/>
-      <int Value="361" Name="FirstVisibleLine"/>
-      <int Value="356" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Administrator\Documents\GitHub\ZhixinTongde_WJ100\wujian100_open-master\sdk\csi_driver\include\drv_gpio.h" Name="FileName"/>
-      <int Value="8" Name="FirstVisibleLine"/>
-      <int Value="23" Name="CurrentLine"/>
+      <int Value="305" Name="FirstVisibleLine"/>
+      <int Value="314" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

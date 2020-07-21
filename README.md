@@ -2,7 +2,7 @@
 
 ## 同济大学 智信同德  
 
-![同济大学](http://photo.tongji.edu.cn/_mediafile/tjtk/photos/2010-8-27/b201082711479.jpg)  
+![同济大学](/Document/TongjiUni.jpg)  
 
 ### GitHub repository for Tongji Uni. Team Zhixin Tongde based on WJ100 FPGA  
 

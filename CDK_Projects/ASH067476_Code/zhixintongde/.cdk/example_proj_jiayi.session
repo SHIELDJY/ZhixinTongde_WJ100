@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="E:\Documents\GitHub\wujian100_example_by_jiayi\CDK_Proj\wujian100_example_by_jiayi\example_proj_jiayi\example_proj_jiayi.cdkws">
+  <int Value="1" Name="m_selectedTab"/>
+  <wxString Value="E:\Documents\GitHub\wujian100_example_by_jiayi\CDK_Proj\wujian100_example_by_jiayi\example_proj_jiayi\example_proj_jiayi.cdkws" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="E:\Documents\GitHub\wujian100_example_by_jiayi\CDK_Proj\wujian100_example_by_jiayi\example_proj_jiayi\main\main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\Documents\GitHub\wujian100_example_by_jiayi\CDK_Proj\wujian100_example_by_jiayi\example_proj_jiayi\user_lib\src\user_gpio.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="13" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\Documents\GitHub\wujian100_example_by_jiayi\CDK_Proj\wujian100_example_by_jiayi\example_proj_jiayi\user_lib\inc\user_gpio.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+</Session>
