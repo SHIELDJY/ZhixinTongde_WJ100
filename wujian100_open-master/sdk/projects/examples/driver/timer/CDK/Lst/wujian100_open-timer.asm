@@ -8356,7 +8356,7 @@ int main(void)
     42b2:	00006537          	lui	a0,0x6
     42b6:	d7050513          	addi	a0,a0,-656 # 5d70 <sg_usi_config+0x68>
     42ba:	451000ef          	jal	ra,4f0a <puts>
-  	timer_init(1,1000000);
+  	timer_init(1,500000);
 	usart_init();
     42be:	3d2d                	jal	40f8 <usart_init>
 	//IIC_init();
@@ -8533,8 +8533,8 @@ int main(void)
     if (ret < 0) {
     4456:	e60544e3          	bltz	a0,42be <main+0x28>
     ret = csi_timer_set_timeout(timer_handle, timer_T);
-    445a:	000f45b7          	lui	a1,0xf4
-    445e:	24058593          	addi	a1,a1,576 # f4240 <__ctor_end__+0xed9c0>
+    445a:	0007a5b7          	lui	a1,0x7a
+    445e:	12058593          	addi	a1,a1,288 # 7a120 <__ctor_end__+0x738a0>
     4462:	8522                	mv	a0,s0
     4464:	e1aff0ef          	jal	ra,3a7e <csi_timer_set_timeout>
     if (ret < 0) {

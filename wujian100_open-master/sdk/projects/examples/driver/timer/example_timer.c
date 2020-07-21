@@ -298,7 +298,7 @@ int main(void)
 {
 
 	GPIO_Init();
-  	timer_init(1,1000000);
+  	timer_init(1,500000);
 	usart_init();
 	//IIC_init();
 	//MPU6050_Init();
@@ -306,7 +306,7 @@ int main(void)
 	OLED_P6x8Str(45,0,(uint8_t *)"Welcome!");
 	OLED_P6x8Str(20,1,(uint8_t *)"top_loc=");
 	OLED_P6x8Str(20,2,(uint8_t *)"bot_loc=");	
-	OLED_P6x8Str(20,2,(uint8_t *)"tim_cnt=");	
+	OLED_P6x8Str(20,3,(uint8_t *)"tim_cnt=");	
     //循环进行：读取串口是否有数据->有数据进行解算、控制电机旋转->标志清零
 	while(1)
 	{			
