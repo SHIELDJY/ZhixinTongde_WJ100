@@ -16,6 +16,8 @@
 #include "pin_name.h"
 #include "pin.h"
 #include "drv_usart.h"
+#include "oled.h"
+#include "imu.h"
 
 
 
@@ -98,9 +100,11 @@ usart_handle_t p_csi_usart;
     return 0;
 }
 
-
+uint16_t timer_counter=0; 
 static void timer_event_cb_fun(int32_t idx, timer_event_e event)
 {
+	
+	timer_counter++;
 	
 /*
 	if(flag1_Motor1 && pulse_num_Motor1!=0)//start gernerate pulse
@@ -174,29 +178,29 @@ static int32_t timer_init(uint8_t timer_num,uint32_t timer_T)
 }
 void GPIO_Init()
 {
-    pin1=csi_gpio_pin_initialize(PA2,NULL); //模拟PWM
+    pin1=csi_gpio_pin_initialize(PA1,NULL); //gpio_PWM motor top
     csi_gpio_pin_config_mode(pin1, GPIO_MODE_OPEN_DRAIN);
     csi_gpio_pin_config_direction(pin1, GPIO_DIRECTION_OUTPUT);	
 	csi_gpio_pin_write(pin1,0);//low
-	pin2=csi_gpio_pin_initialize(PA4,NULL);//模拟PWM
+	pin2=csi_gpio_pin_initialize(PA4,NULL); //gpio_PWM motor bottom
     csi_gpio_pin_config_mode(pin2, GPIO_MODE_OPEN_DRAIN);
     csi_gpio_pin_config_direction(pin2, GPIO_DIRECTION_OUTPUT);	
 	csi_gpio_pin_write(pin2,0);//low
 	 
-    pin1_d1=csi_gpio_pin_initialize(PA0,NULL);
+    pin1_d1=csi_gpio_pin_initialize(PA3,NULL); //dir+
     csi_gpio_pin_config_mode(pin1_d1, GPIO_MODE_OPEN_DRAIN);
     csi_gpio_pin_config_direction(pin1_d1, GPIO_DIRECTION_OUTPUT);	
     csi_gpio_pin_write(pin1_d1,1);//HIGH
-    pin1_d2=csi_gpio_pin_initialize(PA1,NULL);
+    pin1_d2=csi_gpio_pin_initialize(PA5,NULL); //dir-
     csi_gpio_pin_config_mode(pin1_d2, GPIO_MODE_OPEN_DRAIN);
     csi_gpio_pin_config_direction(pin1_d2, GPIO_DIRECTION_OUTPUT);	
     csi_gpio_pin_write(pin1_d2,0);//low
 	
-    pin2_d1=csi_gpio_pin_initialize(PA3,NULL);
+    pin2_d1=csi_gpio_pin_initialize(PA2,NULL); //dir+
     csi_gpio_pin_config_mode(pin2_d1, GPIO_MODE_OPEN_DRAIN);
     csi_gpio_pin_config_direction(pin2_d1, GPIO_DIRECTION_OUTPUT);	
     csi_gpio_pin_write(pin2_d1,1);//HIGH	
-    pin2_d2=csi_gpio_pin_initialize(PA5,NULL);
+    pin2_d2=csi_gpio_pin_initialize(PA0,NULL); //dir-
     csi_gpio_pin_config_mode(pin2_d2, GPIO_MODE_OPEN_DRAIN);
     csi_gpio_pin_config_direction(pin2_d2, GPIO_DIRECTION_OUTPUT);	
     csi_gpio_pin_write(pin2_d2,0);//low	
@@ -230,6 +234,7 @@ int usart_init(void)
 
 //正值顺时针，负值逆时针，顺逆时针方向自定义
 //loc是电机标号，num=0~9999 num和角度对应关系(近似线性)由于未闭环需要实测
+int32_t move_speed=1000;
 void change_angle(int32_t num,uint8_t loc)
 {
 	int count_pulse=0;	
@@ -251,9 +256,9 @@ void change_angle(int32_t num,uint8_t loc)
 		while(count_pulse<=num)
 		{  
 			 csi_gpio_pin_write(pin1,1);//high
-			 udelay(100);
+			 udelay(move_speed);
 			 csi_gpio_pin_write(pin1,0);//low
-			 udelay(100);
+			 udelay(move_speed);
 			 count_pulse++;
 		}
 	}
@@ -274,9 +279,9 @@ void change_angle(int32_t num,uint8_t loc)
 		while(count_pulse<=num)
 		{  
 			 csi_gpio_pin_write(pin2,1);//high
-			 udelay(100);//100 us
+			 udelay(move_speed);//100 us
 			 csi_gpio_pin_write(pin2,0);//low
-			 udelay(100);
+			 udelay(move_speed);
 			 count_pulse++;
 		}	
 	}
@@ -287,16 +292,27 @@ void change_angle(int32_t num,uint8_t loc)
 int32_t aim_degree=0;//目标旋转角度
 uint8_t aim_loc;//目标电机
 uint8_t flag=0;//控制位
+int16_t top_loc=0;
+int16_t bottom_loc=0;
 int main(void)
 {
 
 	GPIO_Init();
-  	//timer_init(1,1000);
+  	timer_init(1,500000);
 	usart_init();
-
+	//IIC_init();
+	//MPU6050_Init();
+	OLED_Init();
+	OLED_P6x8Str(45,0,(uint8_t *)"Welcome!");
+	OLED_P6x8Str(20,1,(uint8_t *)"top_loc=");
+	OLED_P6x8Str(20,2,(uint8_t *)"bot_loc=");	
+	OLED_P6x8Str(20,3,(uint8_t *)"tim_cnt=");	
     //循环进行：读取串口是否有数据->有数据进行解算、控制电机旋转->标志清零
 	while(1)
 	{			
+			OLED_Print_Num1(70,1,top_loc);
+			OLED_Print_Num1(70,2,bottom_loc);
+			OLED_Print_Num1(70,3,timer_counter);
 			usart_receive_sync(p_csi_usart,&data_rev,6);
 			if(data_rev[0]!='\0')
 			 {	
@@ -321,6 +337,10 @@ int main(void)
 		{   
 			//旋转和复位
 			change_angle(aim_degree,aim_loc);
+			if(aim_loc==1)  //top_motor
+			    top_loc+=aim_degree;
+			else
+				bottom_loc+=aim_degree;
 			flag=0;
 			aim_degree=0;
 		}

@@ -336,6 +336,24 @@
           <File Name="../../../../../projects/examples/driver/timer/example_timer.c">
             <FileOption/>
           </File>
+          <File Name="../oled.c">
+            <FileOption/>
+          </File>
+          <File Name="../oled.h">
+            <FileOption/>
+          </File>
+          <File Name="../IIC.c">
+            <FileOption/>
+          </File>
+          <File Name="../IIC.h">
+            <FileOption/>
+          </File>
+          <File Name="../imu.c">
+            <FileOption/>
+          </File>
+          <File Name="../imu.h">
+            <FileOption/>
+          </File>
         </VirtualDirectory>
       </VirtualDirectory>
     </VirtualDirectory>
@@ -419,7 +437,7 @@
         <CreateHexFile>no</CreateHexFile>
         <CreateBinFile>no</CreateBinFile>
         <Preprocessor>no</Preprocessor>
-        <Disasm>no</Disasm>
+        <Disassmeble>yes</Disassmeble>
         <CallGraph>no</CallGraph>
         <Map>no</Map>
       </Output>
@@ -442,7 +460,7 @@
         <Undefine/>
         <Optim>Optimize size (-Os)</Optim>
         <DebugLevel>Maximum (-g3)</DebugLevel>
-        <IncludePath>$(ProjectPath);$(ProjectPath)/../../../../../csi_core/include;$(ProjectPath)/../../../../../csi_driver/include;$(ProjectPath)/../../../../../libs/include;$(ProjectPath)/../../../../../csi_driver/wujian100_open/include;$(ProjectPath)/../../../../../csi_kernel/include;$(ProjectPath)/../../../../../board/wujian100_open_evb/include;$(ProjectPath)/../../../../../projects/examples/driver/timer/configs;C:/Users/Administrator/Desktop/wujian100_open-master/sdk/projects/examples/driver/timer</IncludePath>
+        <IncludePath>$(ProjectPath);$(ProjectPath)/../../../../../csi_core/include;$(ProjectPath)/../../../../../csi_driver/include;$(ProjectPath)/../../../../../libs/include;$(ProjectPath)/../../../../../csi_driver/wujian100_open/include;$(ProjectPath)/../../../../../csi_kernel/include;$(ProjectPath)/../../../../../board/wujian100_open_evb/include;$(ProjectPath)/../../../../../projects/examples/driver/timer/configs;$(ProjectPath)/../../../../../projects/examples/driver/timer</IncludePath>
         <OtherFlags>-ffunction-sections -fdata-sections</OtherFlags>
         <Verbose>no</Verbose>
         <Ansi>no</Ansi>
@@ -469,6 +487,7 @@
         <LibPath/>
         <OtherFlags>-Wl,-zmax-page-size=1024</OtherFlags>
         <AutoLDFile>no</AutoLDFile>
+        <LinkType/>
       </Linker>
       <Debug>
         <LoadApplicationAtStartup>yes</LoadApplicationAtStartup>
@@ -485,6 +504,7 @@
         <ConfigICE>
           <IP>localhost</IP>
           <PORT>1025</PORT>
+          <CPUNumber>0</CPUNumber>
           <Clock>12000</Clock>
           <Delay>10</Delay>
           <WaitReset>50</WaitReset>
