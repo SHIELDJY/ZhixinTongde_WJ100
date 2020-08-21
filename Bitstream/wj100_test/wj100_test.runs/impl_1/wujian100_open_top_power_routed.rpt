@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Mar 26 17:42:20 2020
+| Date             : Sat Aug  8 20:20:15 2020
 | Host             : SHIELD running 64-bit major release  (build 9200)
 | Command          : report_power -file wujian100_open_top_power_routed.rpt -pb wujian100_open_top_power_summary_routed.pb -rpx wujian100_open_top_power_routed.rpx
 | Design           : wujian100_open_top
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.166        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.026        |
+| Dynamic (W)              | 0.025        |
 | Device Static (W)        | 0.140        |
 | Effective TJA (C/W)      | 2.5          |
 | Max Ambient (C)          | 99.6         |
@@ -52,15 +52,15 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.015 |        4 |       --- |             --- |
+| Clocks                   |     0.014 |        4 |       --- |             --- |
 | Slice Logic              |     0.003 |    45864 |       --- |             --- |
-|   LUT as Logic           |     0.003 |    26672 |    133800 |           19.93 |
+|   LUT as Logic           |     0.003 |    26675 |    133800 |           19.94 |
 |   CARRY4                 |    <0.001 |     1508 |     33450 |            4.51 |
 |   Register               |    <0.001 |    13415 |    267600 |            5.01 |
 |   F7/F8 Muxes            |    <0.001 |      397 |    133800 |            0.30 |
 |   Others                 |     0.000 |      406 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |       72 |     46200 |            0.16 |
-| Signals                  |     0.005 |    37813 |       --- |             --- |
+| Signals                  |     0.005 |    37806 |       --- |             --- |
 | Block RAM                |    <0.001 |       64 |       365 |           17.53 |
 | I/O                      |     0.003 |       62 |       285 |           21.75 |
 | Static Power             |     0.140 |          |           |                 |
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.054 |       0.023 |      0.031 |
+| Vccint    |       1.000 |     0.054 |       0.022 |      0.031 |
 | Vccaux    |       1.800 |     0.031 |       0.000 |      0.031 |
 | Vcco33    |       3.300 |     0.006 |       0.001 |      0.005 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -144,7 +144,7 @@ Table of Contents
 +-------------------------------------------------+-----------+
 | Name                                            | Power (W) |
 +-------------------------------------------------+-----------+
-| wujian100_open_top                              |     0.026 |
+| wujian100_open_top                              |     0.025 |
 |   PAD_GPIO_0_IOBUF_inst                         |    <0.001 |
 |   PAD_GPIO_10_IOBUF_inst                        |     0.000 |
 |   PAD_GPIO_11_IOBUF_inst                        |     0.000 |

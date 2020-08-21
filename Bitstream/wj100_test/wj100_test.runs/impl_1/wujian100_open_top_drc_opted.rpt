@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Mar 26 17:30:37 2020
+| Date         : Sat Aug  8 20:09:55 2020
 | Host         : SHIELD running 64-bit major release  (build 9200)
 | Command      : report_drc -file wujian100_open_top_drc_opted.rpt -pb wujian100_open_top_drc_opted.pb -rpx wujian100_open_top_drc_opted.rpx
 | Design       : wujian100_open_top
@@ -154,7 +154,7 @@ Related violations: <none>
 
 REQP-1839#20 Warning
 RAMB36 async control check  
-The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_4/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_4/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 RPBF-3#1 Warning

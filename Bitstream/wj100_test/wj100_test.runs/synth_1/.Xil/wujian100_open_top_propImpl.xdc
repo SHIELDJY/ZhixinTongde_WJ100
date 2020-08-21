@@ -65,12 +65,6 @@ set_property src_info {type:XDC file:1 line:174 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN W20     [get_ports PAD_GPIO_27]
 set_property src_info {type:XDC file:1 line:175 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V19     [get_ports PAD_GPIO_28]
-set_property src_info {type:XDC file:1 line:176 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U20     [get_ports PAD_GPIO_29]
-set_property src_info {type:XDC file:1 line:177 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN AB20    [get_ports PAD_GPIO_30]
-set_property src_info {type:XDC file:1 line:178 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN T20     [get_ports PAD_GPIO_31]
 set_property src_info {type:XDC file:1 line:189 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN M21    [get_ports PAD_PWM_CH0]
 set_property src_info {type:XDC file:1 line:190 export:INPUT save:INPUT read:READ} [current_design]
@@ -121,5 +115,11 @@ set_property src_info {type:XDC file:1 line:222 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN J14    [get_ports PAD_USI2_SD0]
 set_property src_info {type:XDC file:1 line:223 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN K22    [get_ports PAD_USI2_SD1]
+set_property src_info {type:XDC file:1 line:346 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y8    [get_ports PAD_GPIO_29];	#k4
+set_property src_info {type:XDC file:1 line:347 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB6   [get_ports PAD_GPIO_30];	#k5
+set_property src_info {type:XDC file:1 line:348 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V8    [get_ports PAD_GPIO_31];	#k6
 set_property src_info {type:XDC file:1 line:365 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN P4  [get_ports POUT_EHS]

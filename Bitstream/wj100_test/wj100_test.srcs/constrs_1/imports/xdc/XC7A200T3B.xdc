@@ -173,9 +173,9 @@ set_property PACKAGE_PIN W19     [get_ports PAD_GPIO_25]
 set_property PACKAGE_PIN AA20    [get_ports PAD_GPIO_26]
 set_property PACKAGE_PIN W20     [get_ports PAD_GPIO_27]
 set_property PACKAGE_PIN V19     [get_ports PAD_GPIO_28]
-set_property PACKAGE_PIN U20     [get_ports PAD_GPIO_29]
-set_property PACKAGE_PIN AB20    [get_ports PAD_GPIO_30]
-set_property PACKAGE_PIN T20     [get_ports PAD_GPIO_31]
+# set_property PACKAGE_PIN U20     [get_ports PAD_GPIO_29]
+# set_property PACKAGE_PIN AB20    [get_ports PAD_GPIO_30]
+# set_property PACKAGE_PIN T20     [get_ports PAD_GPIO_31]
 #set_property PACKAGE_PIN V20     [get_ports ]
 #set_property PACKAGE_PIN U21     [get_ports ]
 #set_property PACKAGE_PIN W21     [get_ports ]
@@ -343,9 +343,9 @@ set_property PACKAGE_PIN K22    [get_ports PAD_USI2_SD1]
 # USER KEYs:
 #===========================================
 #set_property PACKAGE_PIN AB7   [get_ports ];	#k3
-#set_property PACKAGE_PIN Y8    [get_ports {gpio0_port[2]}];	#k4
-#set_property PACKAGE_PIN AB6   [get_ports {gpio0_port[3]}];	#k5
-#set_property PACKAGE_PIN V8    [get_ports {gpio0_port[4]}];	#k6
+set_property PACKAGE_PIN Y8    [get_ports PAD_GPIO_29];	#k4
+set_property PACKAGE_PIN AB6   [get_ports PAD_GPIO_30];	#k5
+set_property PACKAGE_PIN V8    [get_ports PAD_GPIO_31];	#k6
 
 #===========================================
 # SWITCH x8

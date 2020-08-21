@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-2L" LaunchTime="1585213963">
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-2L" LaunchTime="1596887359">
   <File Type="BITSTR-BMM" Name="wujian100_open_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="wujian100_open_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="wujian100_open_top_timing_summary_init.rpt"/>
